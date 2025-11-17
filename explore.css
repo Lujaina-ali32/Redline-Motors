@@ -1,40 +1,37 @@
+html {
+scroll-behavior: smooth;
+}
 
 
-    html {
-      scroll-behavior: smooth;
-    }
+.fade-up {
+opacity: 0;
+transform: translateY(20px);
+animation: fadeUp 1s ease forwards;
+}
 
-    /* Fade-up animation */
-    .fade-up {
-      opacity: 0;
-      transform: translateY(20px);
-      animation: fadeUp 1s ease forwards;
-    }
+.fade-delay {
+animation-delay: 0.3s;
+}
 
-    .fade-delay {
-      animation-delay: 0.3s;
-    }
+@keyframes fadeUp {
+to {
+    opacity: 1;
+    transform: translateY(0);
+}
+}
 
-    @keyframes fadeUp {
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
+@keyframes carFloat {
+0% {
+    transform: translateY(0px) rotate(0deg);
+}
+50% {
+    transform: translateY(-12px) rotate(2deg);
+}
+100% {
+    transform: translateY(0px) rotate(0deg);
+}
+}
 
-    /* Floating animation for car images */
-    @keyframes carFloat {
-      0% {
-        transform: translateY(0px) rotate(0deg);
-      }
-      50% {
-        transform: translateY(-12px) rotate(2deg);
-      }
-      100% {
-        transform: translateY(0px) rotate(0deg);
-      }
-    }
-
-    .animate-car-float {
-      animation: carFloat 4s ease-in-out infinite;
-    }
+.animate-car-float {
+animation: carFloat 4s ease-in-out infinite;
+}

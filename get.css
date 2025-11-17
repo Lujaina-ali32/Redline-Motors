@@ -1,0 +1,8 @@
+html { scroll-behavior: smooth; }
+
+nav a:hover {
+  color: #ff2a2a;
+}
+nav a::after {
+  background: #ff2a2a;
+}
